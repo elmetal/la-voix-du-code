@@ -7,7 +7,7 @@ struct Home: StaticPage {
     @Environment(\.articles) private var articles
     
     var body: some HTML {
-        Text("Hello world!")
+        Text("La voix du code")
             .font(.title1)
         
         Section {
