@@ -10,7 +10,7 @@ import Ignite
 
 struct BlogArticle: ArticlePage {
     var body: some HTML {
-        Text(article.title).font(.title1).padding()
+        Text(article.title).font(.title1).padding(.vertical, 10)
         if let image = article.image {
             Image(image, description: article.imageDescription)
                 .resizable().cornerRadius(16).frame(maxHeight: 320)
