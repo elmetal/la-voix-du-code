@@ -16,27 +16,21 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install Swift
-        run: |
-          sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev
-          curl -O https://download.swift.org/swiftly/linux/swiftly-$(uname -m).tar.gz
-          tar zxf swiftly-$(uname -m).tar.gz
-          ./swiftly init --verbose --assume-yes --skip-install
-          . ~/.local/share/swiftly/env.sh
-          swiftly install 6.0
-          echo "$(dirname $(which swift))" >> $GITHUB_PATH
-
-      - run: swift --version
 
       - name: Build site with Ignite
         run: |
           cd LaVoixDuCode
-          swift build -c release
-          ignite build
+          xcodebuild \
+            -configuration debug \
+            -scheme "LaVoixDuCode" \
+            -sdk macosx \
+            -destination 'platform=macOS' \
+            -derivedDataPath ".build/derivedData"
+
+          .build/derivedData/Build/Products/debug/LaVoixDuCode
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
