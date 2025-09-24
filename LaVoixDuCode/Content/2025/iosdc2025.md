@@ -24,12 +24,12 @@ https://craft-cuisine.jp
 ## day1
 
 ### ハイパフォーマンスなGIFアニメ再生を実現する工夫
-https://fortee.jp/iosdc-japan-2025/proposal/ab24be40-5e30-40c2-8eff-a2e691f10865
+[ハイパフォーマンスなGIFアニメ再生を実現する工夫](https://fortee.jp/iosdc-japan-2025/proposal/ab24be40-5e30-40c2-8eff-a2e691f10865)
 
 実装上難しいアルゴリズムでの最適化をやるよりも、アプリのコンテキストをよく観察した上での基本的な最適化で大きなインパクトが出ることを教えてくれる非常に実践的で面白い内容でした。
 
 ### カスタムUIを作る覚悟
-https://fortee.jp/iosdc-japan-2025/proposal/c5ee3a90-1624-4912-8e52-c8049869d3b8
+[カスタムUIを作る覚悟](https://fortee.jp/iosdc-japan-2025/proposal/c5ee3a90-1624-4912-8e52-c8049869d3b8)
 
 UIの射程を認知すること、認知した上でなお覚悟を決めて開発することの重要性が語られていてよかったです。
 
@@ -40,7 +40,7 @@ day0の飲み屋をリピートしました。
 ## day2
 
 ### 「iPhoneのマイナンバーカード」のすべて
-https://fortee.jp/iosdc-japan-2025/proposal/92480fdb-0cae-4b75-8471-348b02924fa9
+[「iPhoneのマイナンバーカード」のすべて](https://fortee.jp/iosdc-japan-2025/proposal/92480fdb-0cae-4b75-8471-348b02924fa9)
 
 マイナンバーカードを入れてから望もうと思ったら日程上システムが休みだったため入れられず。。。
 国際標準規格やユースケースに触れられて面白かったです。
