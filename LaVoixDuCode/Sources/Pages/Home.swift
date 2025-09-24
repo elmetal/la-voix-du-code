@@ -13,7 +13,9 @@ struct Home: StaticPage {
         Section {
             Text("Latest posts").font(.title2)
             ForEach(articles.all) { article in
-                Link(article)
+                Text {
+                    Link(article)
+                }
             }
         }
         .padding(.vertical, .large)
