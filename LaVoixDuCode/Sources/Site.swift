@@ -17,7 +17,7 @@ struct IgniteWebsite {
 struct Blog: Site {
     var name = "La voix du code"
 //    var titleSuffix = " – My Awesome Site"
-    var url = URL(static: "https://www.example.com")
+    var url = URL(static: "https://elmetal.github.io/la-voix-du-code/")
     var builtInIconsEnabled = true
 
     var author = "elmetal"
