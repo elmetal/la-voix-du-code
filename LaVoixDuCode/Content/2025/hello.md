@@ -4,7 +4,7 @@ date: 2025-09-24
 description: Ignite + GitHub Pages で公開するMarkdown記事のサンプルです。
 tags: [Swift, Ignite, Blog]
 layout: BlogArticle
-path: la-voix-du-code/hello
+path: hello
 ---
 
 # はじめまして
