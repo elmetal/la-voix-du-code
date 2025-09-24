@@ -3,8 +3,6 @@ title: はじめまして — La voix du code
 date: 2025-09-24
 description: Ignite + GitHub Pages で公開するMarkdown記事のサンプルです。
 tags: [Swift, Ignite, Blog]
-image: /Assets/ogp.png
-imageDescription: Placeholder OGP
 ---
 
 # はじめまして
