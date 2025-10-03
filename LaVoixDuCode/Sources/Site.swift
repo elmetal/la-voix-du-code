@@ -25,4 +25,5 @@ struct Blog: Site {
     var homePage = Home()
     var layout = MainLayout()
     var articlePages: [any ArticlePage] { BlogArticle() }
+    var prettifyHTML = false
 }
