@@ -13,8 +13,9 @@ struct Home: StaticPage {
         Section {
             Text("Latest posts").font(.title2)
             ForEach(articles.all) { article in
-                Text {
-                    Link(article)
+                HStack {
+                    Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
+                    Text { Link(article) }
                 }
             }
         }
