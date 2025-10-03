@@ -54,7 +54,11 @@ struct MyGlassButtonStyle: ButtonStyle {
             .glassEffect()
     }
 }
+```
 
+`MyGlassButtonStyle`は既存の`ButtonStyle`とはconcreteな型が異なるため、`.buttonStyle()`内で呼び分けることはできません。`ViewModifier`で分岐します。
+
+```swift
 struct MyGlassButton: ViewModifier {
     var fallBack: FallBack
     func body(content: Content) -> some View {
@@ -86,3 +90,9 @@ struct MyButton: View {
     }
 }
 ```
+
+---
+
+これらの対応でセマンティックな共通部分を持ちつつ、コンポーネントのスタイルを分岐できました。
+
+OSバージョンによる分岐も既存のView Styles APIの形式を踏襲するとSwiftUIの世界に適合しやすい形で記述できます。
