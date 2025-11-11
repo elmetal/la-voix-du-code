@@ -23,8 +23,8 @@ struct Home: StaticPage {
         
         Section {
             List {
-                Link("Tag: Swift", target: "/tags/swift")
-                Link("All tags", target: "/tags")
+                Link("Tag: Swift", target: "/la-voix-du-code/tags/swift")
+                Link("All tags", target: "/la-voix-du-code/tags")
             }
         }
     }
