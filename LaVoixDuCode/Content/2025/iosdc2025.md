@@ -2,7 +2,7 @@
 title: iOSDC Japan 2025に参加しました
 date: 2025-09-24
 description: 
-tags: [Swift, Blog, iOSDC]
+tags: Swift, Blog, iOSDC
 layout: BlogArticle
 path: iosdc2025
 ---

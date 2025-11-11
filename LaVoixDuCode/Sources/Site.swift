@@ -23,6 +23,7 @@ struct Blog: Site {
     var author = "elmetal"
 
     var homePage = Home()
+    var tagPage = Tags()
     var layout = MainLayout()
     var articlePages: [any ArticlePage] { BlogArticle() }
     var prettifyHTML = false

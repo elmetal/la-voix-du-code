@@ -20,5 +20,12 @@ struct Home: StaticPage {
             }
         }
         .padding(.vertical, .large)
+        
+        Section {
+            List {
+                Link("Tag: Swift", target: "/tags/swift")
+                Link("All tags", target: "/tags")
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 ---
 title: iOSDC 2021に参加しました
 date: 2021-09-20
-tags: [Swift, Blog, iOSDC]
+tags: Swift, Blog, iOSDC
 layout: BlogArticle
 path: iosdc2021
 ---

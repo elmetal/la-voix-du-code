@@ -2,7 +2,7 @@
 title: ubuntu-slimにSwiftが入っていなかった
 date: 2025-11-10
 description: 
-tags: [Swift, Blog, GitHub Actions]
+tags: Swift, Blog, GitHub Actions
 layout: BlogArticle
 path: swift-is-not-installd-on-ubuntu-slim
 ---
