@@ -2,7 +2,7 @@
 title: Styling with Liquid Glass Availability
 date: 2025-10-03
 description:
-tags: [Swift, Liquid Glass, Blog]
+tags: Swift, Liquid Glass, Blog
 layout: BlogArticle
 path: ios26-styling-with-liquid-glass-availability
 prettifyHTML: false

@@ -2,7 +2,7 @@
 title: Accessing a Factory-Reset RTX830 Using Safari
 date: 2025-10-08
 description:
-tags: [Safari, Network, Blog]
+tags: Safari, Network, Blog
 layout: BlogArticle
 path: accessing-factory-reset-rtx830-using-safari
 ---
