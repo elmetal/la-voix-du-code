@@ -27,7 +27,7 @@ struct Home: StaticPage {
         Section {
             List {
                 Link("Tag: Swift", target: site.sitePath("tags/swift"))
-                Link("All tags", target: site.sitePath("tags"))
+                Link("All posts", target: site.sitePath("tags"))
             }
         }
     }

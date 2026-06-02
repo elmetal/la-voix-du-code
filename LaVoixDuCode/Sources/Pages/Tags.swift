@@ -13,7 +13,7 @@ struct Tags: TagPage {
     @Environment(\.site) private var site
 
     var body: some HTML {
-        Text(tag.name)
+        Text(tag is AllTagsCategory ? "All posts" : tag.name)
             .font(.title1)
 
         Section {
