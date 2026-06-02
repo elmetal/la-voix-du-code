@@ -5,6 +5,7 @@ struct Home: StaticPage {
     var title = "Home"
     
     @Environment(\.articles) private var articles
+    @Environment(\.site) private var site
     
     var body: some HTML {
         Text("La voix du code")
@@ -15,7 +16,9 @@ struct Home: StaticPage {
             ForEach(articles.all) { article in
                 HStack {
                     Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
-                    Text { Link(article) }
+                    Text {
+                        Link(article.title, target: site.sitePath(article.path))
+                    }
                 }
             }
         }
@@ -23,8 +26,8 @@ struct Home: StaticPage {
         
         Section {
             List {
-                Link("Tag: Swift", target: "/la-voix-du-code/tags/swift")
-                Link("All tags", target: "/la-voix-du-code/tags")
+                Link("Tag: Swift", target: site.sitePath("tags/swift"))
+                Link("All tags", target: site.sitePath("tags"))
             }
         }
     }
