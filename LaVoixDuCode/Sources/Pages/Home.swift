@@ -16,6 +16,7 @@ struct Home: StaticPage {
             ForEach(articles.all.prefix(upTo: 5)) { article in
                 HStack {
                     Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
+                        .class("font-monospace")
                     Text {
                         Link(article.title, target: site.sitePath(article.path))
                     }

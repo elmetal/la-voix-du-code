@@ -21,6 +21,7 @@ struct Tags: TagPage {
                 ForEach(tag.articles) { article in
                     HStack {
                         Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
+                            .class("font-monospace")
                         Text {
                             Link(article.title, target: site.sitePath(article.path))
                         }
