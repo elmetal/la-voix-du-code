@@ -13,7 +13,7 @@ struct Home: StaticPage {
         
         Section {
             Text("Latest posts").font(.title2)
-            ForEach(articles.all) { article in
+            ForEach(articles.all.prefix(upTo: 5)) { article in
                 HStack {
                     Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
                     Text {
