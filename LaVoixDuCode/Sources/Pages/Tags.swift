@@ -20,7 +20,7 @@ struct Tags: TagPage {
             VStack(alignment: .leading) {
                 ForEach(tag.articles) { article in
                     HStack {
-                        Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits)))
+                        Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits).locale(Locale(identifier: "ja_JP"))))
                             .class("font-monospace")
                         Text {
                             Link(article.title, target: site.sitePath(article.path))
