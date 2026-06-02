@@ -28,6 +28,7 @@ struct Home: StaticPage {
         Section {
             List {
                 Link("Tag: Swift", target: site.sitePath("tags/swift"))
+                Link("Tag: ぽこあポケモン", target: site.sitePath("tags/pokopia"))
                 Link("All posts", target: site.sitePath("tags"))
             }
         }
