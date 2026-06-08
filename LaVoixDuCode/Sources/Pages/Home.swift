@@ -8,11 +8,8 @@ struct Home: StaticPage {
     @Environment(\.site) private var site
     
     var body: some HTML {
-        Text("La voix du code")
-            .font(.title1)
-        
         Section {
-            Text("Latest posts").font(.title2)
+            Text("Latest posts").font(.title1)
             ForEach(articles.all.prefix(upTo: 5)) { article in
                 HStack {
                     Text(article.date.formatted(Date.FormatStyle().year(.defaultDigits).month(.twoDigits).day(.twoDigits).locale(Locale(identifier: "ja_JP"))))
@@ -24,13 +21,5 @@ struct Home: StaticPage {
             }
         }
         .padding(.vertical, .large)
-        
-        Section {
-            List {
-                Link("Tag: Swift", target: site.sitePath("tags/swift"))
-                Link("Tag: ぽこあポケモン", target: site.sitePath("tags/pokopia"))
-                Link("All posts", target: site.sitePath("tags"))
-            }
-        }
     }
 }
