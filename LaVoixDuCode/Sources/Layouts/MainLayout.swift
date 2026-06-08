@@ -22,6 +22,9 @@ private struct SiteNavigation: HTML {
                 Link("Swift", target: site.sitePath("tags/swift"))
                 Link("ぽこあポケモン", target: site.sitePath("tags/pokopia"))
             }
+            Link(Label("GitHub", systemImage: "github"), target: "https://github.com/elmetal/la-voix-du-code")
+                .target(.blank)
+                .relationship(.external, .noOpener)
         }
         .navigationItemAlignment(.trailing)
         .padding(.bottom, .large)
