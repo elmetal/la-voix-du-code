@@ -12,15 +12,21 @@ struct MainLayout: Layout {
 }
 
 private struct SiteNavigation: HTML {
+    @Environment(\.articles) private var articles
     @Environment(\.site) private var site
+
+    private var tags: [String] {
+        Set(articles.all.compactMap(\.tags).flatMap(\.self)).sorted()
+    }
 
     var body: some HTML {
         NavigationBar(logo: Link(site.name, target: site.sitePath(""))) {
             Link("Home", target: site.sitePath(""))
             Link("All posts", target: site.sitePath("tags"))
             Dropdown("Tags") {
-                Link("Swift", target: site.sitePath("tags/swift"))
-                Link("ぽこあポケモン", target: site.sitePath("tags/pokopia"))
+                for tag in tags {
+                    Link(tag, target: site.sitePath("tags/\(tag.convertedToSlug())"))
+                }
             }
             Link(Label("GitHub", systemImage: "github"), target: "https://github.com/elmetal/la-voix-du-code")
                 .target(.blank)
