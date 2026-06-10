@@ -26,5 +26,6 @@ struct Blog: Site {
     var tagPage = Tags()
     var layout = MainLayout()
     var articlePages: [any ArticlePage] { BlogArticle() }
+    var articleRenderer: FootnoteArticleRenderer.Type { FootnoteArticleRenderer.self }
     var prettifyHTML = false
 }

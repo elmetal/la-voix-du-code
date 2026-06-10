@@ -22,7 +22,7 @@ struct BlogArticle: ArticlePage {
                 .foregroundStyle(.secondary)
         }
         Divider()
-        Text(article.text)
+        RawHTML(article.text)
         ArticlePager(
             previousArticle: previousArticle,
             nextArticle: nextArticle
@@ -48,6 +48,21 @@ struct BlogArticle: ArticlePage {
         }
 
         return articles.all[currentArticleIndex - 1]
+    }
+}
+
+private struct RawHTML: HTML {
+    let html: String
+
+    var body: some HTML { self }
+    var isPrimitive: Bool { true }
+
+    init(_ html: String) {
+        self.html = html
+    }
+
+    func markup() -> Markup {
+        html.markup()
     }
 }
 
