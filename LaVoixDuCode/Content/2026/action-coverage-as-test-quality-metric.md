@@ -6,6 +6,8 @@ tags: Swift, Testing, Blog
 layout: BlogArticle
 path: action-coverage-as-test-quality-metric
 prettifyHTML: false
+image: https://elmetal.github.io/la-voix-du-code/images/2026/action-coverage-as-test-quality-metric.png
+alt: 「Actionのカバレッジをテスト品質指標に用いる」のアイキャッチ画像
 ---
 
 この記事は、[CYBOZU SUMMER BLOG FES '26](https://summer-blog-fes.cybozu.io/2026/)の記事です。
