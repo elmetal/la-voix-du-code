@@ -35,8 +35,8 @@ iOSDC Japan 2026に参加しました。
 Q&Aでコントリビューションポリシーの話題が出て、勉強になりました。  
 [swift-configurationのCONTRIBUTING.md](https://github.com/apple/swift-configuration/blob/main/CONTRIBUTING.md)
 
-### SwiftUI Text Rendering Deep Dive ~Text("\(price)") がピクセルになるまで~
-[fortee](https://fortee.jp/iosdc-japan-2026/proposal/e17a5523-ef89-4ca8-a859-a2a99caeeaf5)
+### SwiftUI Text Rendering Deep Dive 〜Text("\(price)") がピクセルになるまで〜
+[fortee](https://fortee.jp/iosdc-japan-2026/proposal/e17a5523-ef89-4ca8-a859-a2a99caeeaf5)  
 `Text`は基本的な`View`の割に、周辺で非常に多くの仕組みが動いていて、何かカスタムしたいと思った時に良い選択をするのが難しいと感じていました。
 
 トークでは登場人物の紹介と全体像の提示はできましたが、もう少し詳細な話を入れても良かったと感じているのでまた何かできればと思います。
